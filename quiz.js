@@ -1,6 +1,7 @@
 var form_data = document.querySelector("#quiz-form");
-var button  = document.querySelector("#submit_btn");
+var button  = document.querySelector("#check_btn");
 var output = document.querySelector("#output");
+output.style.display="none";
 
 var answers=["90°","right angled"];
 
@@ -14,6 +15,7 @@ function score(){
         }
         i++;
     }
+    output.style.display="block";
     output.innerText = "Your score is " + score;
 }
 button.addEventListener("click",score);

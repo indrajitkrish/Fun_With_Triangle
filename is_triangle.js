@@ -1,6 +1,7 @@
 var angles = document.querySelectorAll(".angle");
 var button = document.querySelector("#check_btn");
 var output = document.querySelector("#output");
+output.style.display="none";
 
 function sumoff(angle1,angle2,angle3){
    var sum=angle1+angle2+angle3;
@@ -10,6 +11,7 @@ function sumoff(angle1,angle2,angle3){
 function calculate_Is_a_triangle(){
     var sum = sumoff(Number(angles[0].value),Number(angles[1].value),Number
     (angles[2].value));
+    output.style.display = "block";
     if(sum<=180)
     output.innerText = "yay , this angles form a triangle";
     else
