@@ -19,7 +19,7 @@ function calculate_Is_a_triangle(){
     var sum = sumoff(Number(angles[0].value),Number(angles[1].value),Number
     (angles[2].value));
     output.style.display = "block";
-    if(sum<=180)
+    if(sum<=180 && sum>0)
     output.innerText = "yay , this angles form a triangle";
     else
     output.innerText = "nah, this angles doesn't form a triangle";
