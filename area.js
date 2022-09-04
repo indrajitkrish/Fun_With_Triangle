@@ -7,7 +7,7 @@ function calculate_hypotenuse(){
     var a = Number(lengths[0].value);
     var b = Number(lengths[1].value);
     var sum = a * b;
-    var area = sum/2 ;
+    var area = (sum/2).toFixed(2) ;
     output.style.display="block";
     output.innerText = "Area of the triangle " + area;
 }
