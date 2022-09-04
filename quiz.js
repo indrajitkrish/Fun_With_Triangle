@@ -3,7 +3,7 @@ var button  = document.querySelector("#check_btn");
 var output = document.querySelector("#output");
 output.style.display="none";
 
-var answers=["90°","right angled"];
+var answers=["90°","right angled","-90","Equilateral","Acute"];
 
 function score(){
     let i=0;
