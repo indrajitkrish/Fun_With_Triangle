@@ -22,7 +22,7 @@ function calculate_Is_a_triangle(){
     (angles[2].value));
      console.log(sum);
     output.style.display = "block";
-    if(sum<=180 && sum>0)
+    if(sum === 180)
     output.innerText = "yay , this angles form a triangle";
     else if(sum == 0)
     output.innerText = "Enter all the three angles";
